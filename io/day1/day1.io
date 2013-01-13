@@ -26,6 +26,18 @@ MyObject slotNames println	# list(type, mySlot)
 
 # What is the difference between = (equals), := (colon equals), and ::=
 # (colon colon equals)? When would you use each one?
-a ::= 1	 newSlot("a", 1)
-a := 1	 setSlot("a", 1)
-a = 1	 updateSlot("a", 1)
+a ::= 1	# newSlot("a", 1)			Creates slot, creates setter, assigns value
+a := 1	# setSlot("a", 1)			Creates slot, assigns value
+a = 1		# updateSlot("a", 1)	Assigns value to slot if it exists, otherwise raises exception
+
+## Do
+# Run an Io program from a file.
+# io day1.io
+
+# Execute the code in a slot given its name.
+MyObject m := method("Test method" println)
+# MyObject m
+m2 := MyObject getSlot("m")
+m2
+# Or
+MyObject perform("m")
