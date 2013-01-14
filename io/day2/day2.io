@@ -17,4 +17,3 @@ postOffice messageArgs := method(call message arguments)
 postOffice messageName := method(call message name)
 postOffice messageArgs("one", 2, :three) println
 postOffice messageName println
-
