@@ -16,9 +16,6 @@ postOffice messageTarget println
 postOffice messageArgs := method(call message arguments)
 postOffice messageName := method(call message name)
 postOffice messageArgs("one", 2, :three) println
-<<<<<<< HEAD
-postOffice messageName println
-=======
 postOffice messageName println
 
 ## Do
@@ -183,4 +180,3 @@ if(guess == rnd,
 	"You guessed correctly!" println,
 	"Out of tries, please play again." println
 )
->>>>>>> 76bd1cc24c671831951d1c0617debc5b77aa9bee
